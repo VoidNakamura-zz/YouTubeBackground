@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "YouTubeBackground",
+  "version": "0.1",
+  "icons": {
+    "128": "youtube.png"
+  },
+  "browser_action":{
+    "default_icon":"youtube.png",
+    "default_popup":"index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"],
+      "js": ["jquery-2.1.4.min.js", "code.js"]
+    }
+  ]
+}
+
